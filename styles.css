@@ -1,1 +1,54 @@
-/*  your css code here. If applicable */
+/* Container */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hero Image */
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures clipping */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* behind content */
+}
+
+/* Content inside hero */
+.hero-content {
+  text-align: center;
+  color: white;
+  max-width: 600px;
+  padding: 20px;
+}
+
+/* Heading and text */
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Explore Now button */
+.btn {
+  padding: 12px 24px;
+  background-color: #e60023; /* Pinterest red */
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ad081b; /* darker red */
+}
